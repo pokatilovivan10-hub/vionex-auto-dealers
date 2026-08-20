@@ -84,7 +84,7 @@ export const BLOCK_DEFINITIONS = Object.freeze({
       primaryGoal: 'warm_leads',
       secondaryLabel: '',
       secondaryHref: '',
-      image: '/assets/img/hero-auto/car-blue-v310.webp',
+      image: '/assets/img/hero-auto/car-blue-v311.webp',
       imageAlt: 'Автомобиль для визуализации лидогенерации автодилеров',
       carX: 4,
       carY: 9,

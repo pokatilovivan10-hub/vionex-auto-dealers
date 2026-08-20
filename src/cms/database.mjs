@@ -1191,6 +1191,28 @@ export class CmsDatabase {
     }
   }
 
+  migrateAutoDealersHeroImageV3111() {
+    const row = this.db.prepare('SELECT id, draft_json, published_json FROM cms_content_items WHERE kind = ? AND slug = ?').get('service', 'auto-dealers');
+    if (!row) return;
+    const migrateDocument = (raw) => {
+      if (!raw) return { raw, changed: false };
+      const document = parseJson(raw, null);
+      if (!document || !Array.isArray(document.blocks)) return { raw, changed: false };
+      const hero = document.blocks.find((block) => block.type === 'hero-auto-dealers');
+      if (!hero?.data) return { raw, changed: false };
+      if (hero.data.image !== '/assets/img/hero-auto/car-blue-v310.webp') return { raw, changed: false };
+      hero.data.image = '/assets/img/hero-auto/car-blue-v311.webp';
+      hero.data.imageAlt = 'Премиальный автомобиль для визуализации лидогенерации автодилеров';
+      return { raw: stringify(document), changed: true };
+    };
+    const draft = migrateDocument(row.draft_json);
+    const published = migrateDocument(row.published_json);
+    if (draft.changed || published.changed) {
+      this.db.prepare('UPDATE cms_content_items SET draft_json = ?, published_json = ?, updated_at = ? WHERE id = ?')
+        .run(draft.raw, published.raw, nowIso(), row.id);
+    }
+  }
+
   runMigrations() {
     let version = this.schemaVersion();
     if (version < 2) {
@@ -1311,6 +1333,14 @@ export class CmsDatabase {
         this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.11.0');
       });
       version = 16;
+    }
+    if (version < 17) {
+      this.transaction(() => {
+        this.migrateAutoDealersHeroImageV3111();
+        this.setSchemaVersion(17);
+        this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.11.1');
+      });
+      version = 17;
     }
     return version;
   }

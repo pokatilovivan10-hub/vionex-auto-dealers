@@ -1,6 +1,6 @@
 {
   "name": "vionex-leads-site",
-  "version": "3.11.0",
+  "version": "3.11.1",
   "private": true,
   "type": "module",
   "description": "VIONEX LEADS website with premium animated hero, secure CMS, page builder, media library, drafts, revisions, forms and CRM delivery.",

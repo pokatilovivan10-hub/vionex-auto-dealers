@@ -29,6 +29,7 @@ const requiredFiles = [
   'public/assets/img/cases3d/dealer-new.webp', 'public/assets/img/cases3d/dealer-new-used.webp',
   'public/assets/img/auto-dealers-hero-v391.webp', 'public/assets/img/auto-dealers-hero-v391-light.webp',
   'public/assets/img/auto-dealers-hero-v392.webp', 'public/assets/img/auto-dealers-hero-v392-light.webp',
+  'public/assets/img/hero-auto/car-blue-v311.webp',
   'public/assets/img/cases3d/equipment-leasing.webp', 'public/assets/img/cases3d/industrial-equipment.webp',
   'public/assets/img/cases3d/cloud-infrastructure.webp', 'public/assets/img/cases3d/fintech.webp',
   'public/assets/img/cases3d/logistics.webp', 'public/assets/img/cases3d/modular-buildings.webp',
@@ -77,12 +78,12 @@ for (const relative of forbiddenFiles) {
 }
 
 const packageJson = JSON.parse(await read('package.json'));
-if (packageJson.version !== '3.11.0') errors.push(`package.json: ожидалась версия 3.11.0, получено ${packageJson.version}`);
+if (packageJson.version !== '3.11.1') errors.push(`package.json: ожидалась версия 3.11.1, получено ${packageJson.version}`);
 if (packageJson.engines?.node !== '>=22.13.0') errors.push('package.json: Node.js должен быть указан как >=22.13.0.');
 for (const script of ['start', 'test', 'check', 'admin:create', 'admin:password', 'cms:backup']) {
   if (!packageJson.scripts?.[script]) errors.push(`package.json: отсутствует script ${script}`);
 }
-if ((await read('VERSION')).trim() !== '3.11.0') errors.push('VERSION: ожидается 3.11.0.');
+if ((await read('VERSION')).trim() !== '3.11.1') errors.push('VERSION: ожидается 3.11.1.');
 if (!(await read('Dockerfile')).startsWith('FROM node:24-alpine')) errors.push('Dockerfile: ожидается Node.js 24 Alpine.');
 
 const requiredBlockTypes = [
@@ -150,7 +151,7 @@ if (!database.includes("run('design_version', '3.9.0')")) errors.push('database.
 if (!database.includes("run('design_version', '3.9.3')")) errors.push('database.mjs: отсутствует отметка design_version 3.9.3.');
 if (!database.includes("run('design_version', '3.10.0')")) errors.push('database.mjs: отсутствует отметка design_version 3.10.0.');
 if (!database.includes("run('design_version', '3.11.0')")) errors.push('database.mjs: отсутствует отметка design_version 3.11.0.');
-if (!database.includes('migratePremiumCasesCarousel()') || !database.includes('migrateCaseShowcaseV34()') || !database.includes('migrateIntegratedCasesAndPricingV35()') || !database.includes('migrateCompactTrustStackV36()') || !database.includes('migrateAutoDealersLandingV37()') || !database.includes('migrateAutoDealersAuditV38()') || !database.includes('migrateAutoDealersHeroRefineV381()') || !database.includes('migrateAutoDealersDesignV390()') || !database.includes('migrateAutoDealersHeroConformanceV391()') || !database.includes('migrateAutoDealersHeroSeamlessV392()') || !database.includes('migrateAutoDealersLayeredHeroV393()') || !database.includes('migrateAutoDealersReferenceHeroV310()') || !database.includes('migrateAutoDealersClarityV311()') || !database.includes('requiredSlugs')) errors.push('database.mjs: отсутствует безопасная миграция дизайн-блоков до v3.11.0.');
+if (!database.includes('migratePremiumCasesCarousel()') || !database.includes('migrateCaseShowcaseV34()') || !database.includes('migrateIntegratedCasesAndPricingV35()') || !database.includes('migrateCompactTrustStackV36()') || !database.includes('migrateAutoDealersLandingV37()') || !database.includes('migrateAutoDealersAuditV38()') || !database.includes('migrateAutoDealersHeroRefineV381()') || !database.includes('migrateAutoDealersDesignV390()') || !database.includes('migrateAutoDealersHeroConformanceV391()') || !database.includes('migrateAutoDealersHeroSeamlessV392()') || !database.includes('migrateAutoDealersLayeredHeroV393()') || !database.includes('migrateAutoDealersReferenceHeroV310()') || !database.includes('migrateAutoDealersClarityV311()') || !database.includes('migrateAutoDealersHeroImageV3111()') || !database.includes('requiredSlugs')) errors.push('database.mjs: отсутствует безопасная миграция дизайн-блоков до v3.11.1.');
 if (!renderer.includes('data-case-carousel') || !renderer.includes('case-showcase-card')) errors.push('render.mjs: отсутствует премиальная разметка динамического слайдера кейсов.');
 if (!publicCss.includes('v3.5.0 — frameless project carousel + premium work models') || !publicCss.includes('.cases-showcase-shell') || !publicCss.includes('.work-models-grid') || !publicCss.includes('.work-comparison-table')) errors.push('cms-public.css: отсутствуют открытая витрина кейсов и премиальные форматы работы v3.5.0.');
 if (!mainJs.includes('initCaseCarousels()') || !mainJs.includes('case_slider_change') || !mainJs.includes('data-case-autoplay-toggle') || !mainJs.includes('--case-media-x') || !mainJs.includes('--case-tilt-x') || !mainJs.includes('case-showcase-pointer') || !mainJs.includes('data-plan-period-label')) errors.push('app.js: отсутствует интерактивная логика кейсов или переключателя форматов v3.5.0.');
