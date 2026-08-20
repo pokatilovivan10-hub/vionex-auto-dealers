@@ -162,8 +162,6 @@ function renderModal(publicConfig, context = {}) {
         <div class="form-field"><label for="lead-name">Имя *</label><input id="lead-name" name="name" autocomplete="name" required placeholder="Как к вам обращаться"><span class="field-error" data-error="name"></span></div>
         <div class="form-field"><label for="lead-phone">Телефон *</label><input id="lead-phone" name="phone" type="tel" autocomplete="tel" required placeholder="+7 999 000-00-00"><span class="field-error" data-error="phone"></span></div>
         <div class="form-field"><label for="lead-company">${escapeHtml(companyLabel)}</label><input id="lead-company" name="company" autocomplete="organization" placeholder="${escapeHtml(companyPlaceholder)}"></div>
-        <div class="form-field"><label for="lead-email">Рабочий email</label><input id="lead-email" name="email" type="email" autocomplete="email" placeholder="name@company.ru"><span class="field-error" data-error="email"></span></div>
-        <div class="form-field full"><label for="lead-role">Ваша роль</label><select id="lead-role" name="role"><option value="">Выберите</option><option>Собственник</option><option>Генеральный директор</option><option>Коммерческий директор</option><option>Руководитель продаж</option><option>Маркетолог</option><option>Другое</option></select></div>
         <div class="form-field full"><label for="lead-comment">${escapeHtml(commentLabel)}</label><textarea id="lead-comment" name="comment" placeholder="${escapeHtml(commentPlaceholder)}"></textarea></div>
         <label class="consent"><input type="checkbox" name="consent" required><span>Согласен на обработку персональных данных по <a class="text-link" href="/privacy" target="_blank" rel="noopener">политике конфиденциальности</a>.</span></label><span class="field-error" data-error="consent"></span>
         <div class="form-actions"><button class="button button-primary" type="submit">Отправить заявку <span aria-hidden="true">↗</span></button><span class="form-status" data-form-status aria-live="polite"></span></div>
@@ -199,7 +197,9 @@ function renderAutoDealersHero(block, context = {}) {
   const carScale = n(d.carScale, 104, 70, 145);
   const sceneHeight = n(d.sceneHeight, 520, 380, 680);
   const advantageItems = (d.badges || []).slice(0, 3);
-  const advantages = advantageItems.map((item) => `<li><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span></li>`).join('');
+  const advantages = advantageItems.map((item) => item.text
+    ? `<li><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span></li>`
+    : `<li class="auto-hero-advantage-plain"><span>${escapeHtml(item.title)}</span></li>`).join('');
   const badges = (d.badges || []).slice(3, 6).map((item, index) => {
     const x = n(item.x, index % 2 === 0 ? 16 : 82, 0, 100);
     const y = n(item.y, index < 2 ? 18 : 78, 0, 100);
@@ -465,6 +465,12 @@ function renderPricing(block) {
   </section>`;
 }
 
+function renderPayPerLead(block) {
+  const d = block.data;
+  const steps = (d.steps || []).slice(0, 4);
+  return `<section class="section pay-per-lead-section" id="pricing" data-cms-block="${escapeHtml(block.id)}"><div class="container"><div class="pay-per-lead-panel reveal"><div class="pay-per-lead-heading"><span class="section-kicker">${escapeHtml(d.kicker)}</span><h2>${escapeHtml(d.title)}</h2><p>${escapeHtml(d.intro)}</p></div><div class="pay-per-lead-steps">${steps.map((step) => `<article><span class="pay-per-lead-number">${escapeHtml(step.number)}</span><h3>${escapeHtml(step.title)}</h3><p>${escapeHtml(step.text)}</p></article>`).join('')}</div><div class="pay-per-lead-footer"><p>${escapeHtml(d.note)}</p><button class="button button-primary" type="button" data-open-form data-goal="${escapeHtml(d.goal || 'pay_per_lead')}" data-cta="pay_per_lead">${escapeHtml(d.buttonLabel || 'Обсудить условия')} <span aria-hidden="true">↗</span></button></div></div></div></section>`;
+}
+
 function renderIntegrations(block) {
   const d = block.data;
   if (block.variant === 'compact-v36') {
@@ -566,6 +572,7 @@ const BLOCK_RENDERERS = {
   'collection-list': renderCollectionList,
   'cases-slider': renderCasesSlider,
   pricing: renderPricing,
+  'pay-per-lead': renderPayPerLead,
   integrations: renderIntegrations,
   agents: renderAgents,
   faq: renderFaq,

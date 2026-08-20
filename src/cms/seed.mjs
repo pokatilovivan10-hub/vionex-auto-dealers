@@ -175,20 +175,7 @@ export function seedContentItems() {
             { title: 'AI назначает визит', text: 'Подбирает время и салон.', icon: 'clock' },
           ],
         }, { variant: 'compact-v36' }),
-        block('pricing', {
-          kicker: 'Форматы работы', title: 'Модели работы для дилерских центров', intro: 'Начните с пилота и масштабируйте контур после подтверждения результата в CRM.',
-          plans: [
-            { name: 'Старт', monthly: 'от 120 000 ₽ / мес', quarterly: 'от 324 000 ₽ / квартал', caption: 'Одно направление или один ДЦ.', popular: false, button: 'Выбрать план' },
-            { name: 'Рост', monthly: 'от 220 000 ₽ / мес', quarterly: 'от 594 000 ₽ / квартал', caption: 'Несколько сегментов и регулярная оптимизация.', popular: true, button: 'Выбрать план' },
-            { name: 'Масштаб', monthly: 'от 350 000 ₽ / мес', quarterly: 'от 945 000 ₽ / квартал', caption: 'Дилерская сеть и глубокая автоматизация.', popular: false, button: 'Выбрать план' },
-          ],
-          features: [
-            { label: 'Привлечение трафика', start: '✓', growth: '✓', scale: '✓' },
-            { label: 'AI-квалификация лидов', start: '✓', growth: '✓', scale: '✓' },
-            { label: 'Сквозная аналитика', start: 'Базово', growth: '✓', scale: '✓' },
-            { label: 'CRM-интеграция', start: '✓', growth: '✓', scale: '✓' },
-          ],
-        }, { variant: 'formats-v35' }),
+        block('pay-per-lead'),
         block('faq', {
           title: 'Вопросы перед запуском', intro: '',
           items: [

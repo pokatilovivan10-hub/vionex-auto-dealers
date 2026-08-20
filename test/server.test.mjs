@@ -156,7 +156,7 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   const response = await fetch(`${baseUrl}/services/auto-dealers`);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Приводим целевых тёплых лидов/);
+  assert.match(html, /Приводим целевых лидов/);
   assert.match(html, /class="auto-hero-advantages"/);
   assert.equal((html.match(/class="auto-hero-advantages"/g) || []).length, 1);
   assert.doesNotMatch(html, />Смотреть кейсы <span aria-hidden="true">→<\/span><\/a>/);
@@ -168,6 +168,8 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   assert.match(html, /Вы платите/);
   assert.match(html, /только за реальных лидов!/);
   assert.match(html, /motorcycles-v2\.webp/);
+  assert.match(html, /Оплата только за подтверждённые лиды/);
+  assert.doesNotMatch(html, /от 120 000 ₽ \/ мес/);
   assert.doesNotMatch(html, /AI ускоряет обработку\. Качество контролируют люди/);
   assert.match(html, /Вопросы перед запуском/);
   assert.match(html, /FAQPage/);
@@ -178,7 +180,7 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   assert.equal(databaseItem.published.blocks.filter((block) => block.enabled !== false).length, 7);
   assert.equal(databaseItem.published.blocks.find((block) => block.type === 'hero-auto-dealers').data.primaryLabel, 'Получить план лидогенерации');
   assert.equal(databaseItem.published.blocks.find((block) => block.type === 'agents').data.items.length, 3);
-  assert.equal(databaseItem.published.blocks.find((block) => block.type === 'pricing').data.features.length, 4);
+  assert.equal(databaseItem.published.blocks.find((block) => block.type === 'pay-per-lead').data.steps.length, 3);
   assert.equal(databaseItem.published.blocks.find((block) => block.type === 'faq').data.items.length, 4);
   assert.match(html, /Получите план лидогенерации для вашего дилерского центра/);
   assert.match(html, /Компания \/ дилерский центр/);
@@ -227,7 +229,7 @@ test('v3.0 homepage defaults migrate to the approved hero route and capabilities
     assert.equal(migratedBlock.data.items[3].title, 'Квалификация лидов');
     assert.equal(migratedBlock.data.items[5].title, 'Аналитика и оптимизация');
     assert.equal(migratedBlock.data.items[4].text, 'Пользовательский текст — его нельзя перезаписывать.');
-    assert.equal(database.schemaVersion(), 17);
+    assert.equal(database.schemaVersion(), 18);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -307,7 +309,7 @@ test('legacy installation migrates to open 3D carousel, premium formats and auto
     assert.equal(database.getContentBySlug('case', 'auto-new-cars', { publishedOnly: true }).cover, '/assets/img/cases3d/dealer-new.webp');
     assert.equal(database.getContentBySlug('case', 'auto-used-cars', { publishedOnly: true }).cover, '/assets/img/cases3d/dealer-new-used.webp');
     assert.equal(database.getContentBySlug('case', 'equipment-leasing', { publishedOnly: true }).cover, '/assets/img/cases3d/equipment-leasing.webp');
-    assert.equal(database.schemaVersion(), 17);
+    assert.equal(database.schemaVersion(), 18);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -341,7 +343,7 @@ test('v3.5 migration preserves customized pricing content while applying the new
     assert.equal(migratedPricing.variant, 'formats-v35');
     assert.equal(migratedPricing.data.title, 'Пользовательский заголовок тарифов');
     assert.equal(migratedPricing.data.plans[0].caption, 'Пользовательское описание — его нельзя перезаписывать.');
-    assert.equal(database.schemaVersion(), 17);
+    assert.equal(database.schemaVersion(), 18);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -369,14 +371,14 @@ test('v3.10 reference hero migration replaces default artwork, adds layout contr
     database = new CmsDatabase(migrationDir);
     let migrated = database.getContentBySlug('service', 'auto-dealers', { publishedOnly: true });
     const migratedHero = migrated.published.blocks.find((block) => block.type === 'hero-auto-dealers').data;
-    assert.equal(migratedHero.image, '/assets/img/hero-auto/car-blue-v311.webp');
+    assert.equal(migratedHero.image, '/assets/img/auto-dealers-real-car.jpg');
     assert.equal(migratedHero.carScale, 108);
     assert.equal(migratedHero.sceneHeight, 560);
-    assert.equal(migratedHero.badges[0].title, 'Вы платите');
+    assert.equal(migratedHero.badges[0].title, 'Вы платите только за реальных лидов!');
     assert.equal(migratedHero.badges[0].x, 27);
     assert.equal(migratedHero.badges[0].visualType, 'standard');
     assert.equal(migratedHero.badges.length, 3);
-    assert.equal(database.schemaVersion(), 17);
+    assert.equal(database.schemaVersion(), 18);
 
     const customDraft = structuredClone(migrated.draft);
     const customPublished = structuredClone(migrated.published);

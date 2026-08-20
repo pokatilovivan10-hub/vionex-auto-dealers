@@ -1213,6 +1213,35 @@ export class CmsDatabase {
     }
   }
 
+  migrateAutoDealersPayPerLeadV3112() {
+    const row = this.db.prepare('SELECT id, draft_json, published_json FROM cms_content_items WHERE kind = ? AND slug = ?').get('service', 'auto-dealers');
+    if (!row) return;
+    const approvedItem = seedContentItems().find((item) => item.kind === 'service' && item.slug === 'auto-dealers');
+    const approvedDocument = approvedItem?.document;
+    const approvedHero = approvedDocument?.blocks?.find((block) => block.type === 'hero-auto-dealers');
+    const approvedPayPerLead = approvedDocument?.blocks?.find((block) => block.type === 'pay-per-lead');
+    if (!approvedHero || !approvedPayPerLead) return;
+    const defaultImages = new Set(['/assets/img/auto-dealers-hero-v391.webp', '/assets/img/auto-dealers-hero-v392.webp', '/assets/img/hero-auto/car-blue-v311.webp']);
+    const migrateDocument = (raw) => {
+      const document = parseJson(raw, { schemaVersion: 1, blocks: [] });
+      const hero = document.blocks?.find((block) => block.type === 'hero-auto-dealers');
+      if (hero) {
+        hero.data = { ...hero.data, titleLine1: approvedHero.data.titleLine1, titleLine2: approvedHero.data.titleLine2 };
+        if (defaultImages.has(hero.data.image)) hero.data.image = approvedHero.data.image;
+        if (Array.isArray(hero.data.badges) && hero.data.badges[0]) hero.data.badges[0] = { ...hero.data.badges[0], title: approvedHero.data.badges[0].title, text: '' };
+      }
+      const pricingIndex = document.blocks?.findIndex((block) => block.type === 'pricing');
+      if (pricingIndex >= 0) document.blocks[pricingIndex] = structuredClone(approvedPayPerLead);
+      const cases = document.blocks?.find((block) => block.type === 'auto-case-video');
+      if (cases) cases.data = { ...cases.data, casesTitle: 'Кейсы: направления, с которыми мы работали' };
+      return document;
+    };
+    const draft = migrateDocument(row.draft_json);
+    const published = migrateDocument(row.published_json);
+    this.db.prepare('UPDATE cms_content_items SET draft_json = ?, published_json = ?, updated_at = ? WHERE id = ?')
+      .run(JSON.stringify(draft), JSON.stringify(published), nowIso(), row.id);
+  }
+
   runMigrations() {
     let version = this.schemaVersion();
     if (version < 2) {
@@ -1341,6 +1370,14 @@ export class CmsDatabase {
         this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.11.1');
       });
       version = 17;
+    }
+    if (version < 18) {
+      this.transaction(() => {
+        this.migrateAutoDealersPayPerLeadV3112();
+        this.setSchemaVersion(18);
+        this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.11.2');
+      });
+      version = 18;
     }
     return version;
   }

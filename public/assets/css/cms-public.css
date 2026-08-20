@@ -1417,6 +1417,23 @@ html[data-theme="light"] .cases-autoplay-toggle {
   position: relative;
   padding: 38px 0 82px;
 }
+
+/* V3.11.2 - dealership pay-per-lead model */
+.pay-per-lead-section { padding: 38px 0 82px; }
+.pay-per-lead-panel { padding: 34px; border: 1px solid color-mix(in srgb, var(--line-strong) 82%, rgba(139, 93, 255, .24)); border-radius: 28px; background: radial-gradient(720px 340px at 52% -12%, rgba(114, 72, 255, .15), transparent 66%), linear-gradient(145deg, color-mix(in srgb, var(--surface-solid) 97%, #161a36 3%), color-mix(in srgb, var(--surface) 96%, transparent)); box-shadow: 0 34px 92px rgba(0, 0, 0, .25); }
+.pay-per-lead-heading { max-width: 760px; }
+.pay-per-lead-heading h2 { margin: 8px 0 14px; font-size: clamp(2rem, 4vw, 3.65rem); line-height: .98; letter-spacing: -.052em; }
+.pay-per-lead-heading p, .pay-per-lead-steps p, .pay-per-lead-footer p { margin: 0; color: var(--muted); line-height: 1.55; }
+.pay-per-lead-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.pay-per-lead-steps article { min-height: 206px; padding: 22px; border: 1px solid var(--line-strong); border-radius: 18px; background: color-mix(in srgb, var(--surface-solid) 87%, transparent); }
+.pay-per-lead-number { color: var(--primary-2); font-size: .74rem; font-weight: 850; letter-spacing: .08em; }
+.pay-per-lead-steps h3 { margin: 34px 0 10px; font-size: 1.12rem; letter-spacing: -.025em; }
+.pay-per-lead-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 16px; padding: 18px 2px 0; }
+.pay-per-lead-footer p { max-width: 680px; font-size: .85rem; }
+.auto-hero-advantage-plain span { color: var(--text); font-size: .78rem; font-weight: 650; line-height: 1.25; }
+html[data-theme="light"] .pay-per-lead-panel { border-color: rgba(69, 74, 137, .15); background: linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(245, 247, 255, .91)); box-shadow: 0 30px 74px rgba(53, 59, 108, .12); }
+html[data-theme="light"] .pay-per-lead-steps article { border-color: rgba(65, 70, 130, .14); background: rgba(255, 255, 255, .8); }
+@media (max-width: 760px) { .pay-per-lead-section { padding: 26px 0 58px; } .pay-per-lead-panel { padding: 23px 16px; border-radius: 24px; } .pay-per-lead-steps { grid-template-columns: 1fr; gap: 10px; margin-top: 22px; } .pay-per-lead-steps article { min-height: 0; padding: 19px; } .pay-per-lead-steps h3 { margin-top: 22px; } .pay-per-lead-footer { display: grid; gap: 16px; } .pay-per-lead-footer .button { width: 100%; } }
 .work-models-panel {
   position: relative;
   overflow: hidden;
