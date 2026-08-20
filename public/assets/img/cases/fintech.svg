@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+<title id="t">Финтех-платформа</title><desc id="d">Трёхмерная иллюстрация финансовой аналитики и корпоративной платформы</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071f25"/><stop offset=".55" stop-color="#0b4b39"/><stop offset="1" stop-color="#15214f"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#78ffb7" stop-opacity=".32"/><stop offset=".48" stop-color="#1fae77" stop-opacity=".12"/><stop offset="1" stop-color="#141b34" stop-opacity=".68"/></linearGradient>
+  <linearGradient id="bars" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#14b867"/><stop offset="1" stop-color="#b7ff55"/></linearGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#43d7ff"/><stop offset="1" stop-color="#a6ff4b"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<rect width="1200" height="720" rx="38" fill="url(#bg)"/>
+<circle cx="858" cy="336" r="292" fill="#33e58b" opacity=".11" filter="url(#glow)"/>
+<g opacity=".14" stroke="#8affc0" fill="none"><path d="M80 565H1130M80 500H1130M80 435H1130M80 370H1130M80 305H1130M80 240H1130"/><path d="M220 120V620M370 120V620M520 120V620M670 120V620M820 120V620M970 120V620"/></g>
+<g transform="translate(510 88)">
+  <path d="M120 42 610 94 610 522 120 470Z" fill="url(#glass)" stroke="#8dffc3" stroke-opacity=".58" stroke-width="3"/>
+  <path d="M72 102 545 150 545 574 72 526Z" fill="#07141e" fill-opacity=".74" stroke="#4be79b" stroke-opacity=".48" stroke-width="3"/>
+  <path d="M96 135 516 178 516 535 96 492Z" fill="#0a1724" fill-opacity=".78"/>
+  <g transform="translate(142 230)" fill="url(#bars)" opacity=".95">
+    <rect x="0" y="168" width="44" height="62" rx="8"/><rect x="70" y="128" width="44" height="102" rx="8"/><rect x="140" y="82" width="44" height="148" rx="8"/><rect x="210" y="18" width="44" height="212" rx="8"/><rect x="280" y="-68" width="44" height="298" rx="8"/>
+  </g>
+  <path d="M134 356 198 316 258 337 323 244 382 267 451 158" fill="none" stroke="url(#line)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#c5ff63"><circle cx="134" cy="356" r="9"/><circle cx="198" cy="316" r="9"/><circle cx="258" cy="337" r="9"/><circle cx="323" cy="244" r="9"/><circle cx="382" cy="267" r="9"/><circle cx="451" cy="158" r="11"/></g>
+  <g fill="#78ffb7" opacity=".78"><rect x="128" y="164" width="92" height="12" rx="6"/><rect x="128" y="190" width="154" height="8" rx="4" opacity=".48"/><rect x="430" y="190" width="56" height="18" rx="9"/></g>
+</g>
+<ellipse cx="845" cy="627" rx="335" ry="42" fill="#4aff9b" opacity=".18" filter="url(#soft)"/>
+</svg>

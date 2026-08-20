@@ -1,0 +1,437 @@
+{
+  "version": "3.2.1",
+  "purpose": "Light-theme animated globe boundary regression audit",
+  "generatedAt": "2026-08-02T08:16:50Z",
+  "checks": [
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 710,
+        "y": 95,
+        "width": 718.515625,
+        "height": 550,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 1440,
+        "height": 609.9375
+      },
+      "flow": {
+        "x": 50,
+        "y": 598,
+        "width": 900,
+        "height": 77.9375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": {
+        "x": 710,
+        "yFrom": 105,
+        "yTo": 590,
+        "meanAdjacentDelta": 0.6687,
+        "maxAdjacentDelta": 2.3333
+      }
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 633.265625,
+        "y": 95,
+        "width": 659.5625,
+        "height": 550,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 1280,
+        "height": 609.9375
+      },
+      "flow": {
+        "x": 24,
+        "y": 598,
+        "width": 900,
+        "height": 77.9375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": {
+        "x": 633,
+        "yFrom": 105,
+        "yTo": 590,
+        "meanAdjacentDelta": 0.6062,
+        "maxAdjacentDelta": 2.3333
+      }
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 980
+      },
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 710,
+        "y": 95,
+        "width": 718.515625,
+        "height": 550,
+        "maskImage": "none",
+        "webkitMaskImage": "none"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 1440,
+        "height": 609.9375
+      },
+      "flow": {
+        "x": 50,
+        "y": 598,
+        "width": 900,
+        "height": 77.9375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 473.921875,
+        "y": 95,
+        "width": 549.78125,
+        "height": 550,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 1024,
+        "height": 609.9375
+      },
+      "flow": {
+        "x": 24,
+        "y": 598,
+        "width": 900,
+        "height": 77.9375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": {
+        "x": 474,
+        "yFrom": 105,
+        "yTo": 590,
+        "meanAdjacentDelta": 1.5966,
+        "maxAdjacentDelta": 51.3333
+      }
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1024,
+        "height": 900
+      },
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 473.921875,
+        "y": 95,
+        "width": 549.78125,
+        "height": 550,
+        "maskImage": "none",
+        "webkitMaskImage": "none"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 1024,
+        "height": 609.9375
+      },
+      "flow": {
+        "x": 24,
+        "y": 598,
+        "width": 900,
+        "height": 77.9375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 16,
+        "y": 474.859375,
+        "width": 736,
+        "height": 517,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 768,
+        "height": 997.0625
+      },
+      "flow": {
+        "x": 16,
+        "y": 994.453125,
+        "width": 736,
+        "height": 92.609375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": 16,
+        "y": 474.859375,
+        "width": 736,
+        "height": 517,
+        "maskImage": "none",
+        "webkitMaskImage": "none"
+      },
+      "hero": {
+        "x": 0,
+        "y": 74,
+        "width": 768,
+        "height": 997.0625
+      },
+      "flow": {
+        "x": 16,
+        "y": 994.453125,
+        "width": 736,
+        "height": 92.609375
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": -31.90625,
+        "y": 742.578125,
+        "width": 453.828125,
+        "height": 352,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 66,
+        "width": 390,
+        "height": 1296.375
+      },
+      "flow": {
+        "x": 12,
+        "y": 1095.375,
+        "width": 366,
+        "height": 261
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": -31.90625,
+        "y": 742.578125,
+        "width": 453.828125,
+        "height": 352,
+        "maskImage": "none",
+        "webkitMaskImage": "none"
+      },
+      "hero": {
+        "x": 0,
+        "y": 66,
+        "width": 390,
+        "height": 1296.375
+      },
+      "flow": {
+        "x": 12,
+        "y": 1095.375,
+        "width": 366,
+        "height": 261
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": -28.3125,
+        "y": 728.453125,
+        "width": 416.625,
+        "height": 352,
+        "maskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)",
+        "webkitMaskImage": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 4%, rgba(0, 0, 0, 0.38) 12%, rgba(0, 0, 0, 0.78) 22%, rgb(0, 0, 0) 32%, rgb(0, 0, 0) 100%)"
+      },
+      "hero": {
+        "x": 0,
+        "y": 66,
+        "width": 360,
+        "height": 1282.25
+      },
+      "flow": {
+        "x": 12,
+        "y": 1081.25,
+        "width": 336,
+        "height": 261
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "routeSteps": 4,
+      "capabilityCards": 6,
+      "canvas": {
+        "x": -28.3125,
+        "y": 728.453125,
+        "width": 416.625,
+        "height": 352,
+        "maskImage": "none",
+        "webkitMaskImage": "none"
+      },
+      "hero": {
+        "x": 0,
+        "y": 66,
+        "width": 360,
+        "height": 1282.25
+      },
+      "flow": {
+        "x": 12,
+        "y": 1081.25,
+        "width": 336,
+        "height": 261
+      },
+      "brokenImages": 0,
+      "duplicateIds": 0,
+      "horizontalOverflow": false,
+      "canvasAnimated": true,
+      "consoleErrors": [],
+      "seam": null
+    }
+  ],
+  "summary": {
+    "viewports": 11,
+    "failures": 0,
+    "maxLightSeamMeanDelta": 1.5966
+  }
+}

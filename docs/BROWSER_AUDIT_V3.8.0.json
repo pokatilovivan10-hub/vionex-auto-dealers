@@ -1,0 +1,642 @@
+{
+  "version": "3.8.0",
+  "route": "/services/auto-dealers",
+  "generatedAt": "2026-08-04T21:46:18.754Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 7294,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-far",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--one",
+          "left": 1271,
+          "right": 1660
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--two",
+          "left": 1276,
+          "right": 1665
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 1440,
+          "right": 1693
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 1255,
+          "right": 1665
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 1426,
+          "right": 1646
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 1426,
+          "right": 1646
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 1443,
+          "right": 1633
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 1403,
+          "right": 1686
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-scan",
+          "left": 1265,
+          "right": 1654
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 7294,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-far",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--one",
+          "left": 1271,
+          "right": 1660
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--two",
+          "left": 1276,
+          "right": 1665
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 1440,
+          "right": 1693
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 1265,
+          "right": 1654
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 1255,
+          "right": 1665
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 1426,
+          "right": 1646
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 1426,
+          "right": 1646
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 1443,
+          "right": 1633
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 1403,
+          "right": 1686
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-scan",
+          "left": 1265,
+          "right": 1654
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "scrollHeight": 9665,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "SPAN",
+          "cls": "auto-hero-scan",
+          "left": -208,
+          "right": 214
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-adjacent",
+          "left": 629,
+          "right": 1109
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 629,
+          "right": 1109
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--one",
+          "left": 636,
+          "right": 1116
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--two",
+          "left": 643,
+          "right": 1123
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 836,
+          "right": 1158
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 629,
+          "right": 1109
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 616,
+          "right": 1122
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 829,
+          "right": 1099
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 829,
+          "right": 1099
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 850,
+          "right": 1083
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 800,
+          "right": 1148
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "theme": "dark",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 10781,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "SPAN",
+          "cls": "auto-hero-scan",
+          "left": -275,
+          "right": 103
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-adjacent",
+          "left": 484,
+          "right": 893
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 484,
+          "right": 893
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--one",
+          "left": 491,
+          "right": 900
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-depth case-showcase-depth--two",
+          "left": 498,
+          "right": 907
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 621,
+          "right": 942
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 484,
+          "right": 893
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 473,
+          "right": 904
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 655,
+          "right": 884
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 654,
+          "right": 885
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 672,
+          "right": 871
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 630,
+          "right": 926
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 13931,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "SPAN",
+          "cls": "auto-hero-scan",
+          "left": -129,
+          "right": 76
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-adjacent",
+          "left": 267,
+          "right": 559
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 267,
+          "right": 559
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 295,
+          "right": 607
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 267,
+          "right": 559
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 258,
+          "right": 568
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 389,
+          "right": 554
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 307,
+          "right": 543
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 326,
+          "right": 521
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 267,
+          "right": 559
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-scan",
+          "left": 267,
+          "right": 559
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-topline",
+          "left": 282,
+          "right": 545
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "theme": "light",
+      "title": "Лидогенерация для автодилеров и дилерских центров | VIONEX LEADS",
+      "h1Count": 1,
+      "h1": "Тёплые лиды для автодилеров.\nБольше тест-драйвов и продаж.",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "scrollHeight": 14233,
+      "duplicateIds": [],
+      "brokenImages": [],
+      "overflowElements": [
+        {
+          "tag": "SPAN",
+          "cls": "auto-hero-scan",
+          "left": -117,
+          "right": 71
+        },
+        {
+          "tag": "ARTICLE",
+          "cls": "case-showcase-card is-adjacent",
+          "left": 246,
+          "right": 512
+        },
+        {
+          "tag": "A",
+          "cls": "case-showcase-card-link",
+          "left": 246,
+          "right": 512
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-ambient",
+          "left": 248,
+          "right": 560
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-media",
+          "left": 246,
+          "right": 512
+        },
+        {
+          "tag": "IMG",
+          "cls": "",
+          "left": 238,
+          "right": 520
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-media-glow",
+          "left": 357,
+          "right": 507
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--one",
+          "left": 282,
+          "right": 497
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-orbit case-showcase-orbit--two",
+          "left": 299,
+          "right": 477
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-grid",
+          "left": 246,
+          "right": 512
+        },
+        {
+          "tag": "SPAN",
+          "cls": "case-showcase-scan",
+          "left": 246,
+          "right": 512
+        },
+        {
+          "tag": "DIV",
+          "cls": "case-showcase-topline",
+          "left": 260,
+          "right": 497
+        }
+      ],
+      "counts": {
+        "metrics": 4,
+        "teasers": 3,
+        "cases": 5,
+        "capabilities": 6,
+        "humanControl": 3,
+        "plans": 3,
+        "agents": 5,
+        "faq": 6
+      },
+      "anchors": {
+        "contact": true,
+        "footerContact": true
+      },
+      "modalTitle": "Обсудить лидогенерацию для дилерского центра"
+    }
+  ],
+  "interactions": {
+    "caseBefore": "4",
+    "caseAfter": "0",
+    "priceBefore": "от 120 000 ₽ / мес",
+    "priceAfter": "от 324 000 ₽ / квартал",
+    "faqExpanded": "true",
+    "modalOpen": true,
+    "modalTitle": "Обсудить лидогенерацию для дилерского центра",
+    "companyLabel": "Компания / дилерский центр",
+    "themeBefore": "dark",
+    "themeAfter": "light",
+    "videoFallback": "/cases/auto-used-cars",
+    "dynamicElements": {
+      "scan": 1,
+      "particles": 3
+    }
+  },
+  "summary": {
+    "viewportsChecked": 6,
+    "noHorizontalOverflow": true,
+    "noDuplicateIds": true,
+    "noBrokenImages": true
+  }
+}

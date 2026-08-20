@@ -1,0 +1,366 @@
+{
+  "version": "3.2.0",
+  "scope": "Главная страница: первый экран и блок «Наши возможности»",
+  "reference": "утверждённый пользователем макет блока с шестью карточками",
+  "viewports": {
+    "dark": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "cards": [
+        {
+          "x": 87,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Стратегия и ICP",
+          "icon": "target",
+          "img": "/assets/img/capabilities/target.svg"
+        },
+        {
+          "x": 299.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Поиск ЛПР",
+          "icon": "search",
+          "img": "/assets/img/capabilities/search.svg"
+        },
+        {
+          "x": 512,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Контакт-центр",
+          "icon": "chat",
+          "img": "/assets/img/capabilities/chat.svg"
+        },
+        {
+          "x": 724.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Квалификация лидов",
+          "icon": "funnel",
+          "img": "/assets/img/capabilities/funnel.svg"
+        },
+        {
+          "x": 937,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "CRM-интеграция",
+          "icon": "crm",
+          "img": "/assets/img/capabilities/crm.svg"
+        },
+        {
+          "x": 1149.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Аналитика и оптимизация",
+          "icon": "chart",
+          "img": "/assets/img/capabilities/chart.svg"
+        }
+      ],
+      "panel": {
+        "x": 60,
+        "y": 701.9375,
+        "w": 1320,
+        "h": 350.9375
+      },
+      "theme": "dark"
+    },
+    "light": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "cards": [
+        {
+          "x": 87,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Стратегия и ICP",
+          "icon": "target",
+          "img": "/assets/img/capabilities/target.svg"
+        },
+        {
+          "x": 299.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Поиск ЛПР",
+          "icon": "search",
+          "img": "/assets/img/capabilities/search.svg"
+        },
+        {
+          "x": 512,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Контакт-центр",
+          "icon": "chat",
+          "img": "/assets/img/capabilities/chat.svg"
+        },
+        {
+          "x": 724.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Квалификация лидов",
+          "icon": "funnel",
+          "img": "/assets/img/capabilities/funnel.svg"
+        },
+        {
+          "x": 937,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "CRM-интеграция",
+          "icon": "crm",
+          "img": "/assets/img/capabilities/crm.svg"
+        },
+        {
+          "x": 1149.5,
+          "y": 781.875,
+          "w": 203.5,
+          "h": 242,
+          "title": "Аналитика и оптимизация",
+          "icon": "chart",
+          "img": "/assets/img/capabilities/chart.svg"
+        }
+      ],
+      "panel": {
+        "x": 60,
+        "y": 701.9375,
+        "w": 1320,
+        "h": 350.9375
+      },
+      "theme": "light"
+    },
+    "mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "cards": [
+        {
+          "x": 33,
+          "y": 154.796875,
+          "w": 324,
+          "h": 149.46875,
+          "title": "Стратегия и ICP",
+          "icon": "target",
+          "img": "/assets/img/capabilities/target.svg"
+        },
+        {
+          "x": 33,
+          "y": 313.265625,
+          "w": 324,
+          "h": 148,
+          "title": "Поиск ЛПР",
+          "icon": "search",
+          "img": "/assets/img/capabilities/search.svg"
+        },
+        {
+          "x": 33,
+          "y": 470.265625,
+          "w": 324,
+          "h": 148,
+          "title": "Контакт-центр",
+          "icon": "chat",
+          "img": "/assets/img/capabilities/chat.svg"
+        },
+        {
+          "x": 33,
+          "y": 627.265625,
+          "w": 324,
+          "h": 149.46875,
+          "title": "Квалификация лидов",
+          "icon": "funnel",
+          "img": "/assets/img/capabilities/funnel.svg"
+        },
+        {
+          "x": 33,
+          "y": 785.734375,
+          "w": 324,
+          "h": 148,
+          "title": "CRM-интеграция",
+          "icon": "crm",
+          "img": "/assets/img/capabilities/crm.svg"
+        },
+        {
+          "x": 33,
+          "y": 942.734375,
+          "w": 324,
+          "h": 155.578125,
+          "title": "Аналитика и оптимизация",
+          "icon": "chart",
+          "img": "/assets/img/capabilities/chart.svg"
+        }
+      ],
+      "panel": {
+        "x": 16,
+        "y": 42.375,
+        "w": 358,
+        "h": 1074.9375
+      },
+      "theme": "dark"
+    },
+    "tablet1024": {
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "cards": [
+        {
+          "x": 51,
+          "y": 122.40625,
+          "w": 301.328125,
+          "h": 239.65625,
+          "title": "Стратегия и ICP",
+          "icon": "target",
+          "img": "/assets/img/capabilities/target.svg"
+        },
+        {
+          "x": 361.328125,
+          "y": 122.40625,
+          "w": 301.328125,
+          "h": 239.65625,
+          "title": "Поиск ЛПР",
+          "icon": "search",
+          "img": "/assets/img/capabilities/search.svg"
+        },
+        {
+          "x": 671.65625,
+          "y": 122.40625,
+          "w": 301.34375,
+          "h": 239.65625,
+          "title": "Контакт-центр",
+          "icon": "chat",
+          "img": "/assets/img/capabilities/chat.svg"
+        },
+        {
+          "x": 51,
+          "y": 371.0625,
+          "w": 301.328125,
+          "h": 238,
+          "title": "Квалификация лидов",
+          "icon": "funnel",
+          "img": "/assets/img/capabilities/funnel.svg"
+        },
+        {
+          "x": 361.328125,
+          "y": 371.0625,
+          "w": 301.328125,
+          "h": 238,
+          "title": "CRM-интеграция",
+          "icon": "crm",
+          "img": "/assets/img/capabilities/crm.svg"
+        },
+        {
+          "x": 671.65625,
+          "y": 371.0625,
+          "w": 301.34375,
+          "h": 238,
+          "title": "Аналитика и оптимизация",
+          "icon": "chart",
+          "img": "/assets/img/capabilities/chart.svg"
+        }
+      ],
+      "panel": {
+        "x": 24,
+        "y": 33.9375,
+        "w": 976,
+        "h": 604.125
+      },
+      "theme": "dark"
+    },
+    "tablet768": {
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "cards": [
+        {
+          "x": 43,
+          "y": 122.53125,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "Стратегия и ICP",
+          "icon": "target",
+          "img": "/assets/img/capabilities/target.svg"
+        },
+        {
+          "x": 273.328125,
+          "y": 122.53125,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "Поиск ЛПР",
+          "icon": "search",
+          "img": "/assets/img/capabilities/search.svg"
+        },
+        {
+          "x": 503.65625,
+          "y": 122.53125,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "Контакт-центр",
+          "icon": "chat",
+          "img": "/assets/img/capabilities/chat.svg"
+        },
+        {
+          "x": 43,
+          "y": 371.1875,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "Квалификация лидов",
+          "icon": "funnel",
+          "img": "/assets/img/capabilities/funnel.svg"
+        },
+        {
+          "x": 273.328125,
+          "y": 371.1875,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "CRM-интеграция",
+          "icon": "crm",
+          "img": "/assets/img/capabilities/crm.svg"
+        },
+        {
+          "x": 503.65625,
+          "y": 371.1875,
+          "w": 221.328125,
+          "h": 239.65625,
+          "title": "Аналитика и оптимизация",
+          "icon": "chart",
+          "img": "/assets/img/capabilities/chart.svg"
+        }
+      ],
+      "panel": {
+        "x": 16,
+        "y": 34.0625,
+        "w": 736,
+        "h": 605.78125
+      },
+      "theme": "dark"
+    }
+  },
+  "summary": {
+    "horizontalOverflow": false,
+    "brokenImages": 0,
+    "duplicateIds": 0,
+    "capabilityCardsDesktop": 6,
+    "capabilityCardsMobile": 6,
+    "premiumSvgAssets": 6,
+    "testedWidths": [
+      1440,
+      1024,
+      768,
+      390
+    ]
+  }
+}

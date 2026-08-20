@@ -1,0 +1,153 @@
+{
+  "version": "3.6.1",
+  "generatedAt": "2026-08-03T08:14:00+03:00",
+  "checks": [
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "overflow": 0
+      },
+      "agents": {
+        "count": 5,
+        "iconSizes": [
+          56,
+          56,
+          56,
+          56,
+          56
+        ],
+        "svgSizes": [
+          34,
+          34,
+          34,
+          34,
+          34
+        ],
+        "arrowDisplays": [
+          "grid",
+          "grid",
+          "grid",
+          "grid"
+        ],
+        "arrowTops": [
+          "58px",
+          "58px",
+          "58px",
+          "58px"
+        ]
+      },
+      "faqCount": 6,
+      "cta": {
+        "titleFont": "29.52px",
+        "visualWidth": 474,
+        "visualHeight": 180,
+        "cardWidth": 252,
+        "cardHeight": 133
+      },
+      "brokenImages": [],
+      "duplicateIds": [],
+      "consoleErrors": []
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "overflow": 0
+      },
+      "agents": {
+        "count": 5,
+        "iconSizes": [
+          56,
+          56,
+          56,
+          56,
+          56
+        ],
+        "svgSizes": [
+          34,
+          34,
+          34,
+          34,
+          34
+        ],
+        "arrowDisplays": [
+          "grid",
+          "grid",
+          "grid",
+          "grid"
+        ],
+        "arrowTops": [
+          "58px",
+          "58px",
+          "58px",
+          "58px"
+        ]
+      },
+      "faqCount": 6,
+      "cta": {
+        "titleFont": "29.52px",
+        "visualWidth": 474,
+        "visualHeight": 180,
+        "cardWidth": 252,
+        "cardHeight": 133
+      },
+      "brokenImages": [],
+      "duplicateIds": [],
+      "consoleErrors": []
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "overflow": 0
+      },
+      "agents": {
+        "count": 5,
+        "iconSizes": [
+          54,
+          54,
+          54,
+          54,
+          54
+        ],
+        "svgSizes": [
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "arrowDisplays": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "arrowTops": [
+          "50%",
+          "50%",
+          "50%",
+          "50%"
+        ]
+      },
+      "faqCount": 6,
+      "cta": {
+        "titleFont": "27.3px",
+        "visualWidth": 312,
+        "visualHeight": 176,
+        "cardWidth": 247,
+        "cardHeight": 133
+      },
+      "brokenImages": [],
+      "duplicateIds": [],
+      "consoleErrors": []
+    }
+  ]
+}

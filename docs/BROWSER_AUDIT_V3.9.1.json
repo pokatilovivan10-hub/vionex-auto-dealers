@@ -1,0 +1,52 @@
+{
+  "AUTO_DEALERS_HERO_V3.9.1_DARK_1440.png": {
+    "theme": "dark",
+    "viewportWidth": 1440,
+    "scrollWidth": 1425,
+    "clientWidth": 1425,
+    "overflow": 0,
+    "h1": "Больше тест-драйвов.\nБольше продаж.",
+    "badges": 4,
+    "imgLoaded": true,
+    "hero": {
+      "w": 1425,
+      "h": 530
+    },
+    "visual": {
+      "x": 690.5,
+      "w": 720
+    }
+  },
+  "AUTO_DEALERS_HERO_V3.9.1_LIGHT_1440.png": {
+    "scrollWidth": 1425,
+    "clientWidth": 1425,
+    "overflow": 0,
+    "h1": "Больше тест-драйвов.\nБольше продаж.",
+    "badges": 4,
+    "imgLoaded": true,
+    "hero": {
+      "w": 1425,
+      "h": 530
+    },
+    "visual": {
+      "x": 690.5,
+      "w": 720
+    }
+  },
+  "AUTO_DEALERS_HERO_V3.9.1_MOBILE_390.png": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "overflow": 0,
+    "h1": "Больше тест-драйвов.\nБольше продаж.",
+    "badges": 4,
+    "imgLoaded": true,
+    "hero": {
+      "w": 390,
+      "h": 751.125
+    },
+    "visual": {
+      "x": 16,
+      "w": 358
+    }
+  }
+}

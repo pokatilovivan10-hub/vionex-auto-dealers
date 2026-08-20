@@ -1,0 +1,68 @@
+[
+  {
+    "viewport": "1440x1000",
+    "theme": "dark",
+    "slides": 8,
+    "dots": 8,
+    "activeSlides": 1,
+    "statusBefore": "2 / 8",
+    "statusAfter": "3 / 8",
+    "plans": 3,
+    "comparisonRows": 11,
+    "monthlyGrowth": "от 220 000 ₽ / мес",
+    "quarterlyGrowth": "от 594 000 ₽ / квартал",
+    "quarterlyLabel": "Оплата за квартал",
+    "horizontalOverflow": 0,
+    "casesShell": {
+      "border": "0px",
+      "background": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none"
+    },
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "viewport": "1440x1000",
+    "theme": "light",
+    "slides": 8,
+    "dots": 8,
+    "activeSlides": 1,
+    "statusBefore": "2 / 8",
+    "statusAfter": "3 / 8",
+    "plans": 3,
+    "comparisonRows": 11,
+    "monthlyGrowth": "от 220 000 ₽ / мес",
+    "quarterlyGrowth": "от 594 000 ₽ / квартал",
+    "quarterlyLabel": "Оплата за квартал",
+    "horizontalOverflow": 0,
+    "casesShell": {
+      "border": "0px",
+      "background": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none"
+    },
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "viewport": "390x844",
+    "theme": "dark",
+    "slides": 8,
+    "dots": 8,
+    "activeSlides": 1,
+    "statusBefore": "2 / 8",
+    "statusAfter": "3 / 8",
+    "plans": 3,
+    "comparisonRows": 11,
+    "monthlyGrowth": "от 220 000 ₽ / мес",
+    "quarterlyGrowth": "от 594 000 ₽ / квартал",
+    "quarterlyLabel": "Оплата за квартал",
+    "horizontalOverflow": 0,
+    "casesShell": {
+      "border": "0px",
+      "background": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none"
+    },
+    "brokenImages": [],
+    "errors": []
+  }
+]

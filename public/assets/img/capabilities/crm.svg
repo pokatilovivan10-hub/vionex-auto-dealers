@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 96" fill="none">
+  <defs>
+    <linearGradient id="g" x1="16" y1="12" x2="104" y2="84" gradientUnits="userSpaceOnUse"><stop stop-color="#91F2FF"/><stop offset=".48" stop-color="#3D92FF"/><stop offset="1" stop-color="#17449C"/></linearGradient>
+    <linearGradient id="e" x1="17" y1="9" x2="102" y2="82" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF"/><stop offset=".35" stop-color="#9DEAFF"/><stop offset="1" stop-color="#5CA7FF"/></linearGradient>
+    <radialGradient id="h"><stop stop-color="#439CFF" stop-opacity=".58"/><stop offset="1" stop-color="#439CFF" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3.1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="60" cy="85" rx="43" ry="8" fill="url(#h)" opacity=".55"/>
+  <g filter="url(#glow)" stroke="url(#e)" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M14 31h25c0-8 5-13 12-13s12 5 12 13h20v17c8 0 13 5 13 12s-5 12-13 12v13H61c0-8-5-13-12-13s-12 5-12 13H14V66c8 0 13-5 13-12s-5-12-13-12V31Z" fill="url(#g)"/>
+    <path d="M54 19h28v15c8 0 13 5 13 12s-5 12-13 12v17H65c0-8-5-13-12-13-4 0-8 2-10 5V48c8 0 13-5 13-12 0-7-5-12-13-12v-5h11Z" fill="url(#g)" fill-opacity=".7"/>
+  </g>
+</svg>

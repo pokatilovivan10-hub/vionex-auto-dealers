@@ -1,0 +1,12 @@
+.env
+node_modules/
+data/**
+!data/.gitkeep
+logs/**
+exports/
+*.log
+*.zip
+.listing
+**/.listing
+vionex-auto-dealers-exact-ssh-v3.9.0-r3-server-ready/
+.DS_Store

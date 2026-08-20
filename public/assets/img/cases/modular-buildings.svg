@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+<title id="t">Модульное здание</title><desc id="d">Абстрактная трёхмерная иллюстрация современного модульного здания</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102746"/><stop offset=".55" stop-color="#12102d"/><stop offset="1" stop-color="#40117b"/></linearGradient>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31557c"/><stop offset="1" stop-color="#101b2f"/></linearGradient>
+ <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c7844f"/><stop offset="1" stop-color="#6d3b26"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9fe6ff" stop-opacity=".9"/><stop offset="1" stop-color="#1f4c73" stop-opacity=".6"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="720" rx="38" fill="url(#bg)"/>
+<ellipse cx="635" cy="612" rx="430" ry="52" fill="#6f50ff" opacity=".28" filter="url(#glow)"/>
+<path d="M220 565 455 370 1000 398 780 612Z" fill="#0b1020" opacity=".85"/>
+<g transform="translate(250 145)">
+ <path d="M50 190 340 45 780 120 500 270Z" fill="#243c5c"/>
+ <path d="M50 190 500 270 500 500 50 410Z" fill="url(#wall)"/>
+ <path d="M500 270 780 120 780 356 500 500Z" fill="#101a2b"/>
+ <path d="M50 190 340 45 340 220 50 365Z" fill="#1b2e48"/>
+ <path d="M340 45 780 120 780 280 340 220Z" fill="#162a43"/>
+ <path d="M75 215 315 95 315 345 75 390Z" fill="url(#glass)" stroke="#8bdcff" stroke-opacity=".55"/>
+ <g fill="url(#wood)"><path d="M355 95 495 118 495 242 355 220Z"/><path d="M515 122 655 146 655 266 515 243Z"/><path d="M675 150 755 164 755 286 675 271Z"/></g>
+ <g fill="url(#glass)" stroke="#7bdcff" stroke-opacity=".4"><path d="M85 405 255 440 255 477 85 444Z"/><path d="M280 444 475 484 475 521 280 481Z"/><path d="M525 288 635 230 635 400 525 458Z"/><path d="M650 222 755 168 755 338 650 393Z"/></g>
+ <g stroke="#9adfff" stroke-opacity=".35" fill="none"><path d="M150 178v204"/><path d="M235 136v230"/><path d="M420 104v130"/><path d="M585 130v126"/></g>
+</g>
+
+<g fill="#b8ff5b"><circle cx="1055" cy="92" r="8"/><circle cx="1090" cy="92" r="8"/><circle cx="1125" cy="92" r="8"/></g>
+</svg>

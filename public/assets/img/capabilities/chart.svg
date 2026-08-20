@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 96" fill="none">
+  <defs>
+    <linearGradient id="g" x1="18" y1="12" x2="103" y2="84" gradientUnits="userSpaceOnUse"><stop stop-color="#8AF8FF"/><stop offset=".45" stop-color="#2BD5F0"/><stop offset="1" stop-color="#087A99"/></linearGradient>
+    <linearGradient id="e" x1="20" y1="9" x2="102" y2="82" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF"/><stop offset=".34" stop-color="#A6FBFF"/><stop offset="1" stop-color="#5DE8FF"/></linearGradient>
+    <radialGradient id="h"><stop stop-color="#2DDCF3" stop-opacity=".58"/><stop offset="1" stop-color="#2DDCF3" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3.1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="61" cy="85" rx="42" ry="8" fill="url(#h)" opacity=".54"/>
+  <g filter="url(#glow)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="20" y="54" width="12" height="28" rx="5" fill="url(#g)" stroke="url(#e)" stroke-width="2"/>
+    <rect x="42" y="40" width="13" height="42" rx="5" fill="url(#g)" stroke="url(#e)" stroke-width="2"/>
+    <rect x="65" y="27" width="13" height="55" rx="5" fill="url(#g)" stroke="url(#e)" stroke-width="2"/>
+    <rect x="88" y="14" width="13" height="68" rx="5" fill="url(#g)" stroke="url(#e)" stroke-width="2"/>
+    <path d="M17 56 41 36l19 4 36-31" stroke="#FFF" stroke-width="4"/>
+    <path d="M83 9h14v14" stroke="#FFF" stroke-width="4"/>
+  </g>
+</svg>

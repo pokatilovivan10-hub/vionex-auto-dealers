@@ -1,0 +1,22 @@
+{
+  "name": "vionex-leads-site",
+  "version": "3.10.0",
+  "private": true,
+  "type": "module",
+  "description": "VIONEX LEADS website with premium animated hero, secure CMS, page builder, media library, drafts, revisions, forms and CRM delivery.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs",
+    "preview": "node src/server.mjs",
+    "test": "node --test --test-reporter=spec",
+    "check": "node scripts/check-project.mjs && npm test",
+    "export:leads": "node scripts/export-leads.mjs",
+    "report": "node scripts/report.mjs",
+    "admin:create": "node scripts/create-admin.mjs",
+    "admin:password": "node scripts/change-admin-password.mjs",
+    "cms:backup": "node scripts/backup-cms.mjs"
+  }
+}

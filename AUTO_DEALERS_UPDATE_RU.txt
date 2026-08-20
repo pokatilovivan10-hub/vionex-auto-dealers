@@ -1,0 +1,26 @@
+ПОЛНЫЙ АРХИВ ПРОЕКТА VIONEX LEADS 3.9.0
+
+В архив включен весь исходный проект из переданного пользователем ZIP-файла,
+а также доработанная страница /services/auto-dealers.
+
+Измененные или добавленные файлы:
+- src/cms/render.mjs
+- scripts/build-preview.mjs
+- public/assets/css/auto-dealers-pixel.css
+- public/assets/img/auto-pixel/hero-visual.webp
+- public/assets/img/auto-pixel/case-commercial.webp
+- public/assets/img/auto-pixel/case-motorcycles.webp
+- public/assets/img/auto-pixel/case-premium.webp
+- public/assets/img/auto-pixel/cta-car.webp
+- public/assets/img/auto-pixel/avatars.webp
+
+Перед заменой на сервере обязательно сохраните резервную копию текущего проекта,
+.env и рабочей директории data, если на сервере в ней находятся база CMS,
+загрузки, заявки или резервные копии.
+
+Установка:
+1. Распаковать архив.
+2. Перенести содержимое каталога vionex-leads-site-v3.9.0 в каталог проекта.
+3. Не перезаписывать серверные .env и data без предварительной проверки.
+4. Выполнить npm test.
+5. Перезапустить Node.js-процесс или пересобрать Docker-контейнер.

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 96" fill="none">
+  <defs>
+    <linearGradient id="g" x1="20" y1="12" x2="98" y2="84" gradientUnits="userSpaceOnUse"><stop stop-color="#E3A2FF"/><stop offset=".48" stop-color="#9955FF"/><stop offset="1" stop-color="#4D27B8"/></linearGradient>
+    <linearGradient id="e" x1="18" y1="10" x2="98" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF"/><stop offset=".35" stop-color="#D7B1FF"/><stop offset="1" stop-color="#9D65FF"/></linearGradient>
+    <radialGradient id="h"><stop stop-color="#A35DFF" stop-opacity=".58"/><stop offset="1" stop-color="#A35DFF" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="58" cy="84" rx="40" ry="8" fill="url(#h)" opacity=".55"/>
+  <g filter="url(#glow)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="48" cy="49" r="30" stroke="url(#g)" stroke-width="9" opacity=".96"/>
+    <circle cx="48" cy="49" r="18" stroke="url(#e)" stroke-width="5"/>
+    <circle cx="48" cy="49" r="7" fill="url(#g)" stroke="#FFF" stroke-width="3"/>
+    <path d="M54 43 92 10" stroke="url(#e)" stroke-width="7"/>
+    <path d="M79 10h15v15M80 25 94 10" stroke="url(#e)" stroke-width="6"/>
+  </g>
+</svg>

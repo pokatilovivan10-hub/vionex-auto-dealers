@@ -1,0 +1,318 @@
+{
+  "version": "3.4.0",
+  "baseUrl": "http://127.0.0.1:8414",
+  "viewports": {
+    "desktop-dark": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "theme": "dark",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "desktop-light": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "theme": "light",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "laptop-dark": {
+      "viewport": [
+        1024,
+        768
+      ],
+      "theme": "dark",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "tablet-light": {
+      "viewport": [
+        768,
+        900
+      ],
+      "theme": "light",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "mobile-dark": {
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "dark",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "mobile-light": {
+      "viewport": [
+        390,
+        844
+      ],
+      "theme": "light",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    },
+    "mobile-360": {
+      "viewport": [
+        360,
+        800
+      ],
+      "theme": "dark",
+      "httpStatus": 200,
+      "slides": 8,
+      "activeSlides": 1,
+      "dots": 8,
+      "activeDots": 1,
+      "initialStatus": "2 / 8",
+      "initialActive": "MOTORAENA",
+      "firstThreeLabels": [
+        "AURA AUTO",
+        "MOTORAENA",
+        "LEASEFORGE"
+      ],
+      "adjacentLabels": [
+        "AURA AUTO",
+        "LEASEFORGE"
+      ],
+      "horizontalOverflow": 0,
+      "duplicateIds": [],
+      "visibleBrokenImages": [],
+      "errors": []
+    }
+  },
+  "interaction": {
+    "controls": {
+      "start": "2 / 8",
+      "afterNext": "3 / 8",
+      "afterNextActive": "LEASEFORGE",
+      "afterPrev": "2 / 8",
+      "afterDot0": "1 / 8",
+      "afterEnd": "8 / 8",
+      "afterHome": "1 / 8"
+    },
+    "autoplay": {
+      "start": "2 / 8",
+      "after6900ms": "3 / 8"
+    }
+  },
+  "routes": {
+    "/": {
+      "status": 200,
+      "ok": true
+    },
+    "/services": {
+      "status": 200,
+      "ok": true
+    },
+    "/services/lead-generation": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases": {
+      "status": 200,
+      "ok": true
+    },
+    "/blog": {
+      "status": 200,
+      "ok": true
+    },
+    "/blog/kak-vystroit-b2b-lidogeneraciyu": {
+      "status": 200,
+      "ok": true
+    },
+    "/privacy": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/auto-new-cars": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/auto-used-cars": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/equipment-leasing": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/industrial-equipment": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/cloud-infrastructure": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/logistics-company": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/fintech-platform": {
+      "status": 200,
+      "ok": true
+    },
+    "/cases/modular-buildings": {
+      "status": 200,
+      "ok": true
+    }
+  },
+  "assetIntegrity": {
+    "/assets/img/cases3d/dealer-new.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 73590
+    },
+    "/assets/img/cases3d/dealer-new-used.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 96914
+    },
+    "/assets/img/cases3d/equipment-leasing.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 87736
+    },
+    "/assets/img/cases3d/industrial-equipment.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 56290
+    },
+    "/assets/img/cases3d/cloud-infrastructure.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 34696
+    },
+    "/assets/img/cases3d/fintech.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 30596
+    },
+    "/assets/img/cases3d/logistics.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 44394
+    },
+    "/assets/img/cases3d/modular-buildings.webp": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 64014
+    },
+    "summary": {
+      "assetsChecked": 8,
+      "validWebpResponses": 8
+    }
+  }
+}

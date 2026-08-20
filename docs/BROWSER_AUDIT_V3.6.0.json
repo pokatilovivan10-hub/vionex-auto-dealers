@@ -1,0 +1,45 @@
+{
+  "version": "3.6.0",
+  "checkedAt": "2026-08-03T04:45:00+03:00",
+  "routes": ["/"],
+  "viewports": [
+    {
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "horizontalOverflow": false,
+      "crmLogos": 8,
+      "integrationBenefits": 3,
+      "agents": 5,
+      "faqItems": 6,
+      "messengerButtons": 3,
+      "trustStackBottom": 856.58,
+      "javascriptExceptions": []
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "horizontalOverflow": false,
+      "crmLogos": 8,
+      "integrationBenefits": 3,
+      "agents": 5,
+      "faqItems": 6,
+      "messengerButtons": 3,
+      "trustStackBottom": 856.58,
+      "javascriptExceptions": []
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "crmLogos": 8,
+      "integrationBenefits": 3,
+      "agents": 5,
+      "faqItems": 6,
+      "messengerButtons": 3,
+      "javascriptExceptions": []
+    }
+  ]
+}
