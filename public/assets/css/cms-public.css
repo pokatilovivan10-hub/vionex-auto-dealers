@@ -5683,3 +5683,75 @@ html[data-theme="light"] body[data-page="/services/auto-dealers"] .auto-hero-v31
   body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-badge small { font-size:.57rem; }
   body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-sparkline { width:55px; height:18px; margin-top:3px; }
 }
+
+/* V3.11.0 - clearer automotive offer and calmer reading rhythm */
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy {
+  max-width: 680px;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h1,
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h2 {
+  max-width: 680px;
+  font-size: clamp(3rem, 4.15vw, 4.35rem);
+  line-height: 1.01;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h1 span,
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h1 em,
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h2 span,
+body[data-page="/services/auto-dealers"] .auto-hero-v310 .auto-hero-copy h2 em {
+  white-space: normal;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-advantages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 650px;
+  margin: 27px 0 0;
+  padding: 0;
+  list-style: none;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-advantages li {
+  min-width: 0;
+  padding: 15px 16px;
+  border: 1px solid rgba(130, 102, 255, .24);
+  border-radius: 16px;
+  background: rgba(16, 19, 39, .58);
+  backdrop-filter: blur(12px);
+}
+body[data-page="/services/auto-dealers"] .auto-hero-advantages strong,
+body[data-page="/services/auto-dealers"] .auto-hero-advantages span { display: block; }
+body[data-page="/services/auto-dealers"] .auto-hero-advantages strong {
+  color: #fff;
+  font-size: 1.28rem;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-advantages span {
+  margin-top: 6px;
+  color: rgba(235, 238, 255, .72);
+  font-size: .8rem;
+  line-height: 1.3;
+}
+body[data-page="/services/auto-dealers"] .auto-hero-copy .hero-actions { margin-top: 24px; }
+body[data-page="/services/auto-dealers"] .work-comparison { display: none; }
+body[data-page="/services/auto-dealers"] .section { padding-block: clamp(58px, 6vw, 92px); }
+body[data-page="/services/auto-dealers"] .integration-showcase-copy > p,
+body[data-page="/services/auto-dealers"] .agents-showcase-heading > p,
+body[data-page="/services/auto-dealers"] .dealer-overview-heading > p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+html[data-theme="light"] body[data-page="/services/auto-dealers"] .auto-hero-advantages li {
+  border-color: rgba(104, 82, 210, .16);
+  background: rgba(255, 255, 255, .8);
+}
+html[data-theme="light"] body[data-page="/services/auto-dealers"] .auto-hero-advantages strong { color: #211b38; }
+html[data-theme="light"] body[data-page="/services/auto-dealers"] .auto-hero-advantages span { color: #6b6880; }
+@media (max-width: 900px) {
+  body[data-page="/services/auto-dealers"] .auto-hero-advantages { max-width: 680px; }
+}
+@media (max-width: 680px) {
+  body[data-page="/services/auto-dealers"] .auto-hero-advantages { grid-template-columns: 1fr; gap: 8px; margin-top: 22px; }
+  body[data-page="/services/auto-dealers"] .auto-hero-advantages li { padding: 12px 14px; }
+  body[data-page="/services/auto-dealers"] .auto-hero-advantages strong { font-size: 1.08rem; }
+  body[data-page="/services/auto-dealers"] .auto-hero-advantages span { font-size: .76rem; }
+}

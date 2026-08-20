@@ -198,7 +198,9 @@ function renderAutoDealersHero(block, context = {}) {
   const carY = n(d.carY, 4, -25, 25);
   const carScale = n(d.carScale, 104, 70, 145);
   const sceneHeight = n(d.sceneHeight, 520, 380, 680);
-  const badges = (d.badges || []).slice(0, 6).map((item, index) => {
+  const advantageItems = (d.badges || []).slice(0, 3);
+  const advantages = advantageItems.map((item) => `<li><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.text)}</span></li>`).join('');
+  const badges = (d.badges || []).slice(3, 6).map((item, index) => {
     const x = n(item.x, index % 2 === 0 ? 16 : 82, 0, 100);
     const y = n(item.y, index < 2 ? 18 : 78, 0, 100);
     const width = n(item.width, 176, 120, 320);
@@ -216,7 +218,7 @@ function renderAutoDealersHero(block, context = {}) {
   }).join('');
   return `<section class="auto-hero auto-hero-v393 auto-hero-v310" id="top" data-cms-block="${escapeHtml(block.id)}" data-auto-hero-animation="${d.animation === false ? 'false' : 'true'}">
     <div class="auto-hero-ambient" aria-hidden="true"></div><div class="container auto-hero-inner"><div class="auto-hero-grid">
-      <div class="auto-hero-copy reveal"><span class="eyebrow">${escapeHtml(d.kicker)}</span><${headingTag}><span>${escapeHtml(d.titleLine1)}</span><em>${escapeHtml(d.titleLine2)}</em></${headingTag}><p>${escapeHtml(d.lead)}</p><div class="hero-actions"><button class="button button-primary" type="button" data-open-form data-goal="${escapeHtml(d.primaryGoal || 'warm_leads')}" data-cta="auto_hero_primary">${escapeHtml(d.primaryLabel || 'Получить план')} <span aria-hidden="true">↗</span></button><a class="button button-ghost" href="${safeHref(d.secondaryHref || '/cases')}">${escapeHtml(d.secondaryLabel || 'Смотреть кейсы')} <span aria-hidden="true">→</span></a></div></div>
+      <div class="auto-hero-copy reveal"><span class="eyebrow">${escapeHtml(d.kicker)}</span><${headingTag}><span>${escapeHtml(d.titleLine1)}</span><em>${escapeHtml(d.titleLine2)}</em></${headingTag}><p>${escapeHtml(d.lead)}</p>${advantages ? `<ul class="auto-hero-advantages" aria-label="Ключевые результаты">${advantages}</ul>` : ''}<div class="hero-actions"><button class="button button-primary" type="button" data-open-form data-goal="${escapeHtml(d.primaryGoal || 'warm_leads')}" data-cta="auto_hero_primary">${escapeHtml(d.primaryLabel || 'Получить план')} <span aria-hidden="true">↗</span></button>${d.secondaryLabel ? `<a class="button button-ghost" href="${safeHref(d.secondaryHref || '/cases')}">${escapeHtml(d.secondaryLabel)} <span aria-hidden="true">→</span></a>` : ''}</div></div>
       <div class="auto-hero-visual reveal" aria-label="Автомобильный спрос, аналитика и передача заявок в CRM"><div class="auto-hero-scene" data-auto-hero-scene data-data-scene="${d.dataScene === false ? 'false' : 'true'}" style="--car-x:${carX};--car-y:${carY};--car-scale:${carScale};--scene-height:${sceneHeight}px"><canvas class="auto-hero-data-canvas" data-auto-hero-canvas aria-hidden="true"></canvas><span class="auto-hero-city" aria-hidden="true"></span><span class="auto-hero-orbit auto-hero-orbit--a" aria-hidden="true"></span><span class="auto-hero-orbit auto-hero-orbit--b" aria-hidden="true"></span><span class="auto-hero-orbit auto-hero-orbit--c" aria-hidden="true"></span><span class="auto-hero-floor" aria-hidden="true"></span>${image ? `<img class="auto-hero-car" data-auto-hero-car src="${image}" alt="${escapeHtml(d.imageAlt || '')}" width="1134" height="600" fetchpriority="high">` : ''}<span class="auto-hero-headlight auto-hero-headlight--left" aria-hidden="true"></span><span class="auto-hero-headlight auto-hero-headlight--right" aria-hidden="true"></span>${badges}</div></div>
     </div></div>
   </section>`;

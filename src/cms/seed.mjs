@@ -156,7 +156,7 @@ export function seedContentItems() {
         block('hero-auto-dealers'),
         block('auto-proof', {
           note: 'Целевые ориентиры пилота. Фактический результат подтверждается по данным CRM.',
-        }, { variant: 'metrics-v39' }),
+        }, { variant: 'metrics-v39', enabled: false }),
         block('auto-case-video', {}, { variant: 'overview-v39' }),
         block('integrations', {
           kicker: 'Интеграции', title: 'CRM и рекламные системы — в одном контуре', text: 'Подключаем CRM, рекламные кабинеты и аналитику. Передаём UTM, интерес, ответственного и следующий шаг.',
@@ -173,8 +173,6 @@ export function seedContentItems() {
             { title: 'AI ассистент', text: 'Отвечает и собирает данные.', icon: 'ai' },
             { title: 'AI квалификатор', text: 'Определяет интерес и приоритет.', icon: 'target' },
             { title: 'AI назначает визит', text: 'Подбирает время и салон.', icon: 'clock' },
-            { title: 'AI напоминания', text: 'Подтверждает визит.', icon: 'chat' },
-            { title: 'AI аналитик', text: 'Находит точки роста.', icon: 'chart' },
           ],
         }, { variant: 'compact-v36' }),
         block('pricing', {
@@ -187,12 +185,8 @@ export function seedContentItems() {
           features: [
             { label: 'Привлечение трафика', start: '✓', growth: '✓', scale: '✓' },
             { label: 'AI-квалификация лидов', start: '✓', growth: '✓', scale: '✓' },
-            { label: 'Чат-боты и сценарии', start: '—', growth: '✓', scale: '✓' },
             { label: 'Сквозная аналитика', start: 'Базово', growth: '✓', scale: '✓' },
             { label: 'CRM-интеграция', start: '✓', growth: '✓', scale: '✓' },
-            { label: 'A/B-тесты', start: '—', growth: '✓', scale: '✓' },
-            { label: 'Персональный менеджер', start: '—', growth: '✓', scale: '✓' },
-            { label: 'Индивидуальные сценарии', start: '—', growth: '—', scale: '✓' },
           ],
         }, { variant: 'formats-v35' }),
         block('faq', {
@@ -201,9 +195,7 @@ export function seedContentItems() {
             { question: 'Сколько занимает запуск системы?', answer: 'План запуска фиксируем после аудита источников, CRM и готовности материалов. Пилотный контур обычно собирается поэтапно.' },
             { question: 'Можно ли интегрировать с нашей CRM?', answer: 'Да. Используем готовый коннектор или REST API/Webhooks, если они доступны в вашей системе.' },
             { question: 'Какие данные нужны для старта?', answer: 'Модельный ряд, география, источники, воронка, критерии квалификации и доступ к тестовой CRM.' },
-            { question: 'Какие каналы трафика используете?', answer: 'Набор каналов зависит от задачи: поиск, контекст, соцсети, базы, ретаргетинг и партнёрские источники.' },
             { question: 'Как измеряется эффективность?', answer: 'Сопоставляем источник, лид, скорость обработки, визит, отказ и продажу по данным CRM.' },
-            { question: 'Можно начать с одного дилерского центра?', answer: 'Да. Безопасный сценарий — пилот на одном ДЦ или одном направлении с последующим масштабированием.' },
           ],
         }, { variant: 'compact-v36' }),
         block('cta', {

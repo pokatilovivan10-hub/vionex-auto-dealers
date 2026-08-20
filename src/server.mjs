@@ -12,7 +12,7 @@ import { createAdminHandler } from './cms/admin-routes.mjs';
 import { openCmsDatabase } from './cms/database.mjs';
 import { renderCmsPage } from './cms/render.mjs';
 
-const APP_VERSION = '3.10.0';
+const APP_VERSION = '3.11.0';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.join(projectRoot, 'public');

@@ -68,12 +68,12 @@ test('admin session cookie is Secure for HTTPS public URL', () => {
   assert.doesNotMatch(sessionCookie('token', httpConfig), /; Secure(?:;|$)/);
 });
 
-test('health endpoint returns version 3.10.0', async () => {
+test('health endpoint returns version 3.11.0', async () => {
   const response = await fetch(`${baseUrl}/health`);
   assert.equal(response.status, 200);
   const body = await response.json();
   assert.equal(body.ok, true);
-  assert.equal(body.version, '3.10.0');
+  assert.equal(body.version, '3.11.0');
 });
 
 test('CMS-rendered public pages and dynamic content routes work', async () => {
@@ -156,9 +156,12 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   const response = await fetch(`${baseUrl}/services/auto-dealers`);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Больше тест-драйвов\./);
+  assert.match(html, /Приводим целевых тёплых лидов/);
+  assert.match(html, /class="auto-hero-advantages"/);
+  assert.equal((html.match(/class="auto-hero-advantages"/g) || []).length, 1);
+  assert.doesNotMatch(html, />Смотреть кейсы <span aria-hidden="true">→<\/span><\/a>/);
   assert.match(html, /data-auto-hero-animation="true"/);
-  assert.match(html, /auto-proof-section/);
+  assert.doesNotMatch(html, /auto-proof-section/);
   assert.match(html, /auto-case-video-section/);
   assert.match(html, /dealer-case-grid/);
   assert.doesNotMatch(html, /AI ускоряет обработку\. Качество контролируют люди/);
@@ -168,9 +171,11 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   const databaseItem = cmsDb.getContentBySlug('service', 'auto-dealers', { publishedOnly: true });
   assert.ok(databaseItem);
   assert.equal(databaseItem.published.blocks[0].type, 'hero-auto-dealers');
-  assert.equal(databaseItem.published.blocks.filter((block) => block.enabled !== false).length, 8);
+  assert.equal(databaseItem.published.blocks.filter((block) => block.enabled !== false).length, 7);
   assert.equal(databaseItem.published.blocks.find((block) => block.type === 'hero-auto-dealers').data.primaryLabel, 'Получить план лидогенерации');
-  assert.match(html, /авто-metrics-v39|auto-metrics-v39/);
+  assert.equal(databaseItem.published.blocks.find((block) => block.type === 'agents').data.items.length, 3);
+  assert.equal(databaseItem.published.blocks.find((block) => block.type === 'pricing').data.features.length, 4);
+  assert.equal(databaseItem.published.blocks.find((block) => block.type === 'faq').data.items.length, 4);
   assert.match(html, /Получите план лидогенерации для вашего дилерского центра/);
   assert.match(html, /Компания \/ дилерский центр/);
   for (const slug of ['auto-commercial-vehicles', 'auto-motorcycles', 'auto-service']) {
@@ -218,7 +223,7 @@ test('v3.0 homepage defaults migrate to the approved hero route and capabilities
     assert.equal(migratedBlock.data.items[3].title, 'Квалификация лидов');
     assert.equal(migratedBlock.data.items[5].title, 'Аналитика и оптимизация');
     assert.equal(migratedBlock.data.items[4].text, 'Пользовательский текст — его нельзя перезаписывать.');
-    assert.equal(database.schemaVersion(), 15);
+    assert.equal(database.schemaVersion(), 16);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -298,7 +303,7 @@ test('legacy installation migrates to open 3D carousel, premium formats and auto
     assert.equal(database.getContentBySlug('case', 'auto-new-cars', { publishedOnly: true }).cover, '/assets/img/cases3d/dealer-new.webp');
     assert.equal(database.getContentBySlug('case', 'auto-used-cars', { publishedOnly: true }).cover, '/assets/img/cases3d/dealer-new-used.webp');
     assert.equal(database.getContentBySlug('case', 'equipment-leasing', { publishedOnly: true }).cover, '/assets/img/cases3d/equipment-leasing.webp');
-    assert.equal(database.schemaVersion(), 15);
+    assert.equal(database.schemaVersion(), 16);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -332,7 +337,7 @@ test('v3.5 migration preserves customized pricing content while applying the new
     assert.equal(migratedPricing.variant, 'formats-v35');
     assert.equal(migratedPricing.data.title, 'Пользовательский заголовок тарифов');
     assert.equal(migratedPricing.data.plans[0].caption, 'Пользовательское описание — его нельзя перезаписывать.');
-    assert.equal(database.schemaVersion(), 15);
+    assert.equal(database.schemaVersion(), 16);
   } finally {
     if (database) database.close();
     await fs.rm(migrationDir, { recursive: true, force: true });
@@ -363,10 +368,11 @@ test('v3.10 reference hero migration replaces default artwork, adds layout contr
     assert.equal(migratedHero.image, '/assets/img/hero-auto/car-blue-v310.webp');
     assert.equal(migratedHero.carScale, 108);
     assert.equal(migratedHero.sceneHeight, 560);
-    assert.equal(migratedHero.badges[0].x, 22);
+    assert.equal(migratedHero.badges[0].title, '+200%');
+    assert.equal(migratedHero.badges[0].x, 27);
     assert.equal(migratedHero.badges[0].visualType, 'chart');
-    assert.equal(migratedHero.badges[3].width, 194);
-    assert.equal(database.schemaVersion(), 15);
+    assert.equal(migratedHero.badges.length, 3);
+    assert.equal(database.schemaVersion(), 16);
 
     const customDraft = structuredClone(migrated.draft);
     const customPublished = structuredClone(migrated.published);

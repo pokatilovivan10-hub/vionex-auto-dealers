@@ -1141,6 +1141,56 @@ export class CmsDatabase {
     }
   }
 
+  migrateAutoDealersClarityV311() {
+    const row = this.db.prepare('SELECT id, draft_json, published_json FROM cms_content_items WHERE kind = ? AND slug = ?').get('service', 'auto-dealers');
+    if (!row) return;
+    const approvedItem = seedContentItems().find((item) => item.kind === 'service' && item.slug === 'auto-dealers');
+    const approvedBlocks = new Map((approvedItem?.document?.blocks || []).map((block) => [block.type, block]));
+    const migrateDocument = (raw) => {
+      if (!raw) return { raw, changed: false };
+      const document = parseJson(raw, null);
+      if (!document || !Array.isArray(document.blocks)) return { raw, changed: false };
+      let changed = false;
+      for (const block of document.blocks) {
+        const approved = approvedBlocks.get(block.type);
+        if (!approved) continue;
+        if (block.type === 'hero-auto-dealers' && block.data) {
+          for (const key of ['kicker', 'titleLine1', 'titleLine2', 'lead', 'primaryLabel', 'primaryGoal', 'secondaryLabel', 'secondaryHref']) {
+            if (block.data[key] !== approved.data[key]) {
+              block.data[key] = approved.data[key];
+              changed = true;
+            }
+          }
+          block.data.badges = structuredClone(approved.data.badges);
+          changed = true;
+        }
+        if (block.type === 'auto-proof' && block.enabled !== false) {
+          block.enabled = false;
+          changed = true;
+        }
+        if (block.type === 'agents' && block.data) {
+          block.data.items = structuredClone(approved.data.items);
+          changed = true;
+        }
+        if (block.type === 'pricing' && block.data) {
+          block.data.features = structuredClone(approved.data.features);
+          changed = true;
+        }
+        if (block.type === 'faq' && block.data) {
+          block.data.items = structuredClone(approved.data.items);
+          changed = true;
+        }
+      }
+      return changed ? { raw: stringify(document), changed: true } : { raw, changed: false };
+    };
+    const draft = migrateDocument(row.draft_json);
+    const published = migrateDocument(row.published_json);
+    if (draft.changed || published.changed) {
+      this.db.prepare('UPDATE cms_content_items SET draft_json = ?, published_json = ?, updated_at = ? WHERE id = ?')
+        .run(draft.raw, published.raw, nowIso(), row.id);
+    }
+  }
+
   runMigrations() {
     let version = this.schemaVersion();
     if (version < 2) {
@@ -1253,6 +1303,14 @@ export class CmsDatabase {
         this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.10.0');
       });
       version = 15;
+    }
+    if (version < 16) {
+      this.transaction(() => {
+        this.migrateAutoDealersClarityV311();
+        this.setSchemaVersion(16);
+        this.db.prepare('INSERT INTO cms_meta(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run('design_version', '3.11.0');
+      });
+      version = 16;
     }
     return version;
   }
@@ -1688,4 +1746,3 @@ export class CmsDatabase {
 export function openCmsDatabase(dataDir, databasePath = '') {
   return new CmsDatabase(dataDir, databasePath);
 }
-
