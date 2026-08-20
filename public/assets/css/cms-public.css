@@ -3698,7 +3698,7 @@ body[data-page="/services/auto-dealers"] .auto-proof-note {
 body[data-page="/services/auto-dealers"] .auto-overview-v39 { padding: 26px 0 32px; }
 body[data-page="/services/auto-dealers"] .auto-overview-grid {
   display: grid;
-  grid-template-columns: minmax(330px, .76fr) minmax(620px, 1.24fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
 }
 body[data-page="/services/auto-dealers"] .dealer-loop-card,

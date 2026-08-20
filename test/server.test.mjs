@@ -164,6 +164,10 @@ test('automotive dealer landing follows the niche specification and is CMS-drive
   assert.doesNotMatch(html, /auto-proof-section/);
   assert.match(html, /auto-case-video-section/);
   assert.match(html, /dealer-case-grid/);
+  assert.doesNotMatch(html, /Единый контур заявки для дилерской сети/);
+  assert.match(html, /Вы платите/);
+  assert.match(html, /только за реальных лидов!/);
+  assert.match(html, /motorcycles-v2\.webp/);
   assert.doesNotMatch(html, /AI ускоряет обработку\. Качество контролируют люди/);
   assert.match(html, /Вопросы перед запуском/);
   assert.match(html, /FAQPage/);
@@ -368,9 +372,9 @@ test('v3.10 reference hero migration replaces default artwork, adds layout contr
     assert.equal(migratedHero.image, '/assets/img/hero-auto/car-blue-v311.webp');
     assert.equal(migratedHero.carScale, 108);
     assert.equal(migratedHero.sceneHeight, 560);
-    assert.equal(migratedHero.badges[0].title, '+200%');
+    assert.equal(migratedHero.badges[0].title, 'Вы платите');
     assert.equal(migratedHero.badges[0].x, 27);
-    assert.equal(migratedHero.badges[0].visualType, 'chart');
+    assert.equal(migratedHero.badges[0].visualType, 'standard');
     assert.equal(migratedHero.badges.length, 3);
     assert.equal(database.schemaVersion(), 17);
 

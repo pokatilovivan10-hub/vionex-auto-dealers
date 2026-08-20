@@ -91,7 +91,7 @@ export const BLOCK_DEFINITIONS = Object.freeze({
       carScale: 108,
       sceneHeight: 560,
       badges: [
-        { title: '+200%', text: 'визитов в салон', icon: 'person', graphic: '', x: 27, y: 78, width: 194, iconSize: 40, accent: 'violet', visualType: 'chart' },
+        { title: 'Вы платите', text: 'только за реальных лидов!', icon: 'shield', graphic: '', x: 27, y: 78, width: 194, iconSize: 40, accent: 'violet', visualType: 'standard' },
         { title: '+50%', text: 'лидов за 14 дней', icon: 'growth', graphic: '', x: 22, y: 17, width: 184, iconSize: 40, accent: 'violet', visualType: 'chart' },
         { title: '1–3 дня', text: 'запуск системы', icon: 'clock', graphic: '', x: 82, y: 18, width: 176, iconSize: 40, accent: 'violet', visualType: 'standard' },
       ],
@@ -170,7 +170,7 @@ export const BLOCK_DEFINITIONS = Object.freeze({
       casesTitle: 'Проекты и сценарии для дилерских центров',
       cases: [
         { kicker: 'Кейс', title: 'Коммерческий транспорт', text: 'Корпоративные продажи', metric: 'B2B • автопарк', image: '/assets/img/cases3d/logistics.webp', imageAlt: 'Коммерческий транспорт', href: '/cases/auto-commercial-vehicles' },
-        { kicker: 'Кейс', title: 'Мототехника', text: 'Сезонный спрос', metric: 'Сезон • визит', image: '/assets/img/cases3d/dealer-new.webp', imageAlt: 'Мототехника и сезонный спрос', href: '/cases/auto-motorcycles' },
+        { kicker: 'Кейс', title: 'Мототехника', text: 'Сезонный спрос', metric: 'Сезон • визит', image: '/assets/img/cases3d/motorcycles-v2.webp', imageAlt: 'Мототехника в дилерском центре', href: '/cases/auto-motorcycles' },
         { kicker: 'Кейс', title: 'Премиум авто', text: 'Тест-драйв по записи', metric: 'Премиум • CRM', image: '/assets/img/auto-dealers-hero-v392.webp', imageAlt: 'Премиальный автомобиль в дилерском центре', href: '/cases/auto-new-cars' },
       ],
       buttonLabel: 'Смотреть все кейсы',

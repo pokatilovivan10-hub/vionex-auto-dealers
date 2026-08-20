@@ -180,7 +180,7 @@ if (!publicCss.includes('V3.9.0 — auto dealer landing redesign') || !publicCss
 if (!publicCss.includes('V3.9.3 — auto-dealer hero as layered scene, no framed banner') || !publicCss.includes('.auto-hero-data-canvas') || !publicCss.includes('.auto-hero-car')) errors.push('cms-public.css: отсутствует многослойная безрамочная композиция первого экрана v3.9.3.');
 if (!publicCss.includes('V3.10.0 - auto dealer hero reference conformance') || !publicCss.includes('.auto-hero-v310') || !publicCss.includes('.auto-hero-sparkline')) errors.push('cms-public.css: отсутствует эталонная композиция первого экрана v3.10.0.');
 if (!publicCss.includes('V3.11.0 - clearer automotive offer and calmer reading rhythm') || !publicCss.includes('.auto-hero-advantages') || !publicCss.includes('.work-comparison { display: none; }')) errors.push('cms-public.css: отсутствует упрощённая композиция автодилерской страницы v3.11.0.');
-if (!renderer.includes('auto-hero-v393') || !renderer.includes('auto-metrics-v39') || !renderer.includes('dealer-loop-card')) errors.push('render.mjs: отсутствует новая разметка автодилерской страницы v3.9.0.');
+if (!renderer.includes('auto-hero-v393') || !renderer.includes('auto-metrics-v39') || !renderer.includes('dealer-cases-card')) errors.push('render.mjs: отсутствует новая разметка автодилерской страницы v3.9.0.');
 
 if (!server.includes("frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com")) errors.push('server.mjs: CSP не разрешает безопасные фасад-видео YouTube/Vimeo.');
 for (const slug of ['auto-new-cars', 'auto-used-cars', 'equipment-leasing', 'modular-buildings', 'industrial-equipment', 'cloud-infrastructure', 'logistics-company', 'fintech-platform']) {
