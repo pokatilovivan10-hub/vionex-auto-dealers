@@ -1,7 +1,7 @@
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const staticPreview = window.location.protocol === 'file:';
+const staticPreview = window.location.protocol === 'file:' || document.body?.dataset.preview === 'true';
 
 const state = {
   sessionId: getSessionId(),
